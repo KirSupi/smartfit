@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Resist Sans Display Light Oblique';
+    src: url('ResistSansDisplay-LightOblique.eot');
+    src: local('Resist Sans Display Light Oblique'), local('ResistSansDisplay-LightOblique'),
+        url('ResistSansDisplay-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-LightOblique.woff2') format('woff2'),
+        url('ResistSansDisplay-LightOblique.woff') format('woff'),
+        url('ResistSansDisplay-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display';
+    src: url('ResistSansDisplay-Bold.eot');
+    src: local('Resist Sans Display Bold'), local('ResistSansDisplay-Bold'),
+        url('ResistSansDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-Bold.woff2') format('woff2'),
+        url('ResistSansDisplay-Bold.woff') format('woff'),
+        url('ResistSansDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display';
+    src: url('ResistSansDisplay-Light.eot');
+    src: local('Resist Sans Display Light'), local('ResistSansDisplay-Light'),
+        url('ResistSansDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-Light.woff2') format('woff2'),
+        url('ResistSansDisplay-Light.woff') format('woff'),
+        url('ResistSansDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display';
+    src: url('ResistSansDisplay-Medium.eot');
+    src: local('Resist Sans Display Medium'), local('ResistSansDisplay-Medium'),
+        url('ResistSansDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-Medium.woff2') format('woff2'),
+        url('ResistSansDisplay-Medium.woff') format('woff'),
+        url('ResistSansDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display Bold Oblique';
+    src: url('ResistSansDisplay-BoldOblique.eot');
+    src: local('Resist Sans Display Bold Oblique'), local('ResistSansDisplay-BoldOblique'),
+        url('ResistSansDisplay-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-BoldOblique.woff2') format('woff2'),
+        url('ResistSansDisplay-BoldOblique.woff') format('woff'),
+        url('ResistSansDisplay-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display Medium Oblique';
+    src: url('ResistSansDisplay-MediumOblique.eot');
+    src: local('Resist Sans Display Medium Oblique'), local('ResistSansDisplay-MediumOblique'),
+        url('ResistSansDisplay-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-MediumOblique.woff2') format('woff2'),
+        url('ResistSansDisplay-MediumOblique.woff') format('woff'),
+        url('ResistSansDisplay-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    src: url('ResistSansText-Medium.eot');
+    src: local('Resist Sans Text Medium'), local('ResistSansText-Medium'),
+        url('ResistSansText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-Medium.woff2') format('woff2'),
+        url('ResistSansText-Medium.woff') format('woff'),
+        url('ResistSansText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text Light Oblique';
+    src: url('ResistSansText-LightOblique.eot');
+    src: local('Resist Sans Text Light Oblique'), local('ResistSansText-LightOblique'),
+        url('ResistSansText-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-LightOblique.woff2') format('woff2'),
+        url('ResistSansText-LightOblique.woff') format('woff'),
+        url('ResistSansText-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text Medium Oblique';
+    src: url('ResistSansText-MediumOblique.eot');
+    src: local('Resist Sans Text Medium Oblique'), local('ResistSansText-MediumOblique'),
+        url('ResistSansText-MediumOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-MediumOblique.woff2') format('woff2'),
+        url('ResistSansText-MediumOblique.woff') format('woff'),
+        url('ResistSansText-MediumOblique.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display Thin Oblique';
+    src: url('ResistSansDisplay-ThinOblique.eot');
+    src: local('Resist Sans Display Thin Oblique'), local('ResistSansDisplay-ThinOblique'),
+        url('ResistSansDisplay-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-ThinOblique.woff2') format('woff2'),
+        url('ResistSansDisplay-ThinOblique.woff') format('woff'),
+        url('ResistSansDisplay-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display';
+    src: url('ResistSansDisplay-Thin.eot');
+    src: local('Resist Sans Display Thin'), local('ResistSansDisplay-Thin'),
+        url('ResistSansDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-Thin.woff2') format('woff2'),
+        url('ResistSansDisplay-Thin.woff') format('woff'),
+        url('ResistSansDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    src: url('ResistSansText-Bold.eot');
+    src: local('Resist Sans Text Bold'), local('ResistSansText-Bold'),
+        url('ResistSansText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-Bold.woff2') format('woff2'),
+        url('ResistSansText-Bold.woff') format('woff'),
+        url('ResistSansText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display';
+    src: url('ResistSansDisplay-Regular.eot');
+    src: local('Resist Sans Display'), local('ResistSansDisplay-Regular'),
+        url('ResistSansDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-Regular.woff2') format('woff2'),
+        url('ResistSansDisplay-Regular.woff') format('woff'),
+        url('ResistSansDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    src: url('ResistSansText-Light.eot');
+    src: local('Resist Sans Text Light'), local('ResistSansText-Light'),
+        url('ResistSansText-Light.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-Light.woff2') format('woff2'),
+        url('ResistSansText-Light.woff') format('woff'),
+        url('ResistSansText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text Bold Oblique';
+    src: url('ResistSansText-BoldOblique.eot');
+    src: local('Resist Sans Text Bold Oblique'), local('ResistSansText-BoldOblique'),
+        url('ResistSansText-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-BoldOblique.woff2') format('woff2'),
+        url('ResistSansText-BoldOblique.woff') format('woff'),
+        url('ResistSansText-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Display Oblique';
+    src: url('ResistSansDisplay-RegularOblique.eot');
+    src: local('Resist Sans Display Oblique'), local('ResistSansDisplay-RegularOblique'),
+        url('ResistSansDisplay-RegularOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansDisplay-RegularOblique.woff2') format('woff2'),
+        url('ResistSansDisplay-RegularOblique.woff') format('woff'),
+        url('ResistSansDisplay-RegularOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text Oblique';
+    src: url('ResistSansText-RegularOblique.eot');
+    src: local('Resist Sans Text Oblique'), local('ResistSansText-RegularOblique'),
+        url('ResistSansText-RegularOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-RegularOblique.woff2') format('woff2'),
+        url('ResistSansText-RegularOblique.woff') format('woff'),
+        url('ResistSansText-RegularOblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    src: url('ResistSansText-Thin.eot');
+    src: local('Resist Sans Text Thin'), local('ResistSansText-Thin'),
+        url('ResistSansText-Thin.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-Thin.woff2') format('woff2'),
+        url('ResistSansText-Thin.woff') format('woff'),
+        url('ResistSansText-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text Thin Oblique';
+    src: url('ResistSansText-ThinOblique.eot');
+    src: local('Resist Sans Text Thin Oblique'), local('ResistSansText-ThinOblique'),
+        url('ResistSansText-ThinOblique.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-ThinOblique.woff2') format('woff2'),
+        url('ResistSansText-ThinOblique.woff') format('woff'),
+        url('ResistSansText-ThinOblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Resist Sans Text';
+    src: url('ResistSansText-Regular.eot');
+    src: local('Resist Sans Text'), local('ResistSansText-Regular'),
+        url('ResistSansText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ResistSansText-Regular.woff2') format('woff2'),
+        url('ResistSansText-Regular.woff') format('woff'),
+        url('ResistSansText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

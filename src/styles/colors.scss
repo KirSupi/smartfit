@@ -1,0 +1,22 @@
+$primary: #5AB888;
+$secondary: #71C6D2;
+
+$primary-darken: darken($primary, 10);
+$primary-lighten: lighten($primary, 10);
+$secondary-darken: darken($secondary, 20);
+$secondary-slightly-lighten: lighten($secondary, 10);
+$secondary-lighten: lighten($secondary, 20);
+
+$black: #060606;
+$white: #FAFAFA;
+
+$black-transparent: rgba($black, 0.1);
+$white-slightly-darken: darken($white, 15);
+$white-darken: darken($white, 30);
+//$grey: #424651;
+$grey: #2B2E36;
+$grey-lighten: lighten($grey, 10);
+$grey-darken: darken($grey, 10);
+$grey-transparent: rgba($grey, 0.1);
+//$main-gradient: linear-gradient(30deg, $primary-darken, $primary);
+$main-gradient: linear-gradient(20deg, $primary-darken 10%, $secondary);

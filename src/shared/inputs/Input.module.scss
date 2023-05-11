@@ -1,0 +1,20 @@
+@use 'styles/colors';
+
+.CustomInput{
+    //color: colors.$primary-darken;
+    border: 0;
+    padding: 0.5rem 0.75rem;
+    margin: 1em 0.5em;
+}
+
+.CustomInput[type=button]{
+    color: colors.$grey;
+    background: linear-gradient(130deg, colors.$primary-lighten, colors.$secondary-slightly-lighten);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15rem;
+}
+.CustomInput[type=button]:hover{
+    color: colors.$grey;
+    background: colors.$secondary-lighten;
+}

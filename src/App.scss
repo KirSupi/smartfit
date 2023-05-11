@@ -1,0 +1,13 @@
+@use 'styles/colors';
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;// 'Roboto', 'Open Sans', 'Bahnschrift';
+    color: colors.$white;
+    background: colors.$grey;
+}
+#App {
+
+}

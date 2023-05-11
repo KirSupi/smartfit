@@ -1,0 +1,50 @@
+@use 'styles/colors';
+@use 'styles/noise';
+
+#Panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    #Sidebar {
+        user-select: none;
+        //min-width: 10vw;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        //background: colors.$grey-darken;
+        //border-right: 3px solid colors.$grey-darken;
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+        height: 100vh;
+        #Logo {
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+        #Links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .Link {
+                font-weight: lighter;
+                display: block;
+                text-decoration: none;
+                color: colors.$white;
+                cursor: pointer;
+                //text-transform: uppercase;
+            }
+            .Link:hover {
+                color: colors.$white-slightly-darken;
+            }
+            .Link[active] {
+                color: colors.$white-darken;
+            }
+        }
+    }
+
+    #Content {
+        //padding: 0 20vw 5rem 2rem;
+        //width: 100%;
+        max-height: 100vh;
+    }
+}

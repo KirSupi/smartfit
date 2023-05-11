@@ -1,0 +1,51 @@
+@use 'styles/colors';
+@use 'styles/noise';
+
+#TasksTable {
+    display: flex;
+    flex-direction: column;
+    table {
+        width: 100%;
+        border-spacing: 0;
+
+        thead {
+            position: sticky;
+            background: colors.$grey-lighten;
+            //background: colors.$main-gradient;
+            //background: rgba(colors.$primary-darken, 0.5);
+            tr{
+                //background: noise.$noise;
+            }
+            tr:first-child th:first-child {
+                border-top-left-radius: 1rem;
+            }
+            tr:last-child th:last-child {
+                border-top-right-radius: 1rem;
+            }
+            tr th {
+                padding: 1rem;
+            }
+        }
+
+        > div {
+            padding: 1rem;
+            border-bottom: 1px solid colors.$secondary;
+            width: 100%;
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid colors.$secondary;
+
+                td {
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+
+    > div {
+        padding: 1rem;
+        border-bottom: 1px solid colors.$secondary;
+    }
+}
