@@ -1,0 +1,69 @@
+@use 'styles/colors';
+
+#Calendar {
+    text-align: center;
+
+    #Workouts {
+        display: flex;
+        flex-direction: column;
+
+        .Workout {
+            width: 100%;
+            margin-bottom: 2.5rem;
+
+            .Title {
+                margin: 0 auto;
+                font-weight: bolder;
+                font-size: 1.5rem;
+                border-radius: 2rem;
+                max-width: 60vw;
+                background: colors.$white;
+                color: colors.$black;
+                box-sizing: border-box;
+            }
+            .Title.Today {
+                background: colors.$white;
+                color: colors.$black-lighten;
+                box-shadow: colors.$grey-lighten 0 0 10px;
+            }
+            .Title.Past {
+                background: colors.$black;
+                color: colors.$white;
+                border: 2px solid colors.$white;
+            }
+            .Title.Future{
+                background: colors.$white-darken;
+                color: colors.$black-slightly-lighten;
+            }
+
+            .Exercises {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                //max-width: 80%;
+
+                table {
+                    min-width: 40vw;
+                    margin: 0.5rem 0 2rem 0;
+                    tr {
+                        border-bottom: 1px solid colors.$white;
+                        td {
+                            text-align: left;
+                            padding-top: 1rem;
+                            padding-bottom: 0.5rem;
+                        }
+                        td:first-child{
+                            padding-right: 1rem;
+                            padding-left: 1rem;
+                        }
+                        td:last-child{
+                            font-weight: bolder;
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,24 +1,39 @@
-import React from 'react';
-import './fonts/OpenSans/OpenSans.scss';
-import './fonts/Bahnschrift/stylesheet.scss';
-import './fonts/ResistSans/stylesheet.scss';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.scss';
-import Panel from "./components/Panel/Panel";
-import {BrowserRouter} from "react-router-dom";
-import {PopUpProvider} from 'shared/PopUp/PopUp';
-import {MantineProvider} from "@mantine/core";
+import React, {useEffect, useState} from 'react';
+import './fonts/Roboto/stylesheet.css';
+import './App.module.scss';
+import Main from "./components/Main/Main";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {useCookies} from "react-cookie";
+import Auth from "./components/Auth/Auth";
+import Registration from "./components/Registration/Registration";
 
-const App = () => (
-    // <MantineProvider withGlobalStyles withNormalizeCSS>
-    <BrowserRouter>
+const App = () => {
+    const [cookies, setCookies] = useCookies(['session']);
+    const [user, setUser] = useState({id: 0, login: '', data: {}});
+    const reloadUser = () => {
+        if (cookies.session !== '') setUser({
+            id: 1,
+            login: "testUser",
+            data: {name: "", height: 170, sex: "male", birthdate: ""}
+        });
+        fetch('/api/auth').then(res => res.json()).then(res => {
+            setUser(res.user);
+        }).catch(err => console.log(err));
+    }
+    useEffect(reloadUser, [cookies.session]);
+    return <BrowserRouter>
         <div id="App">
-            <PopUpProvider>
-                <Panel/>
-            </PopUpProvider>
+            <Routes>
+                {!cookies || !cookies.session || !user || !user.id ? <>
+                    <Route path='/auth' element={<Auth setCookies={setCookies}/>}/>
+                    <Route path='/registration' element={<Registration setCookies={setCookies}/>}/>
+                    <Route path='*' element={<Navigate to='/auth' replace={true}/>}/>
+                </> : <>
+                    <Route path='*' element={<Main user={user} reloadUser={reloadUser} setCookies={setCookies}/>}/>
+                </>}
+            </Routes>
         </div>
     </BrowserRouter>
-    // </MantineProvider>
-)
+}
 
 export default App;

@@ -31,7 +31,6 @@ module.exports = {
         alias: {
             'apiClient': path.join(__dirname, 'src', 'apiClient'),
             'styles': path.join(__dirname, 'src', 'styles'),
-            'shared': path.join(__dirname, 'src', 'shared'),
         }
     },
     module: {
@@ -42,7 +41,7 @@ module.exports = {
                 use: 'babel-loader',
             },
             {
-                test: /\.min\.css$/,
+                test: /\.css$/,
                 use: [
                     'css-loader'
                 ]
@@ -86,7 +85,7 @@ module.exports = {
             },
             {
                 test: /\.s(a|c)ss$/,
-                exclude: /\.module.(s(a|c)ss)$/,
+                exclude: /\.(s(a|c)ss)$/,
                 use: [
                     isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',

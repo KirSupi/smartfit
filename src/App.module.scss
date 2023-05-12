@@ -1,0 +1,73 @@
+@use 'styles/colors';
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: colors.$white;
+    background: colors.$black;
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+// SCROLLBAR
+*::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+*::-webkit-scrollbar-thumb{
+    background: colors.$white;
+    //border: 2px solid colors.$white;
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb:hover{
+    background: colors.$white-slightly-darken;
+}
+*::-webkit-scrollbar-thumb:active{
+    background: colors.$white-darken;
+}
+*::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 10px;
+}
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+input, select {
+    padding: 0.5rem 1.5rem;
+    color: colors.$white;
+    background: colors.$black;
+    border: 1px solid colors.$grey;
+    border-radius: 100rem;
+}
+input.white{
+    color: colors.$black;
+    background: colors.$white;
+}
+
+input:hover, select:hover {
+    background: colors.$black-slightly-lighten;
+}
+input.white:hover, select.white:hover {
+    background: colors.$white-slightly-darken;
+}
+
+input:focus, select:focus {
+    background: colors.$black-lighten;
+}
+input.white:focus, select.white:focus {
+    background: colors.$white-darken;
+}
+
+a {
+    color: colors.$white-slightly-darken;
+    //text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: colors.$white-darken;
+}

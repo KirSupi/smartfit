@@ -1,0 +1,44 @@
+#Account{
+    text-align: center;
+    #Container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        #PhotoWrapper {
+            max-width: 50%;
+            padding-right: 2rem;
+            max-height: 100%;
+            #Photo {
+                width: 100%;
+                border-radius: 2rem;
+                filter: grayscale(0.5) blur(1px);
+                transition: 0.15s;
+            }
+            #Photo:hover {
+                filter: grayscale(0.2) blur(0px);
+            }
+        }
+        #FormWrapper {
+            min-width: 50%;
+            table {
+                tbody {
+                    tr {
+                        td {
+                            padding-bottom: 1rem;
+                            input, select {
+                                width: 100%;
+                            }
+                        }
+                        td:first-child{
+                            text-align: left;
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #ExitButton{
+        margin-top: 3rem;
+    }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "go-herder-api-gui",
+  "name": "smartfit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,6 +17,7 @@
     "date-fns": "^2.30.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
+    "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.0"
   },

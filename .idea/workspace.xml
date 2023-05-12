@@ -5,35 +5,185 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c291d39-7326-4c8c-a1de-e72909f85a00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Active/Active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Active/Active.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Finished/Finished.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Finished/Finished.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Home/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Home/Home.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Page.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Panel.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Queue/Queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Panel/Queue/Queue.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/PopUp/PopUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/PopUp/PopUp.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/TasksStatesTable/TasksStatesTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/TasksStatesTable/TasksStatesTable.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/inputs/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/inputs/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/inputs/Input.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/colors.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/noise.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/dates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Account/Account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Account/Account.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Auth/Auth.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Calendar/Calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Calendar/Calendar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Registration/Registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Registration/Registration.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apiClient/BaseClient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apiClient/HookWrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apiClient/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Active/Active.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Active/Active.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Finished/Finished.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Finished/Finished.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Home/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Home/Home.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Page.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Panel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Panel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/Main.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Queue/Queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Panel/Queue/Queue.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Bahnschrift/Bahnschrift.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Bahnschrift/stylesheet.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Commissioner/Commissioner.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Commissioner/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/FiraMono/FiraMono-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/FiraMono/FiraMono-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/FiraMono/FiraMono-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/FiraMono/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Montserrat/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-ExtraBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OpenSans/OpenSans.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OxygenMono/OxygenMono-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/OxygenMono/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Raleway/Raleway.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Raleway/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-BoldOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-BoldOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-LightOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-LightOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-LightOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-LightOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-MediumOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-MediumOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-MediumOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-MediumOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-RegularOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-RegularOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-RegularOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-RegularOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-ThinOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-ThinOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-ThinOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansDisplay-ThinOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Bold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-BoldOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-BoldOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-BoldOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-BoldOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Light.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-LightOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-LightOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-LightOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-LightOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Medium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-MediumOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-MediumOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-MediumOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-MediumOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-RegularOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-RegularOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-RegularOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-RegularOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Thin.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-ThinOblique.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-ThinOblique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-ThinOblique.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/ResistSansText-ThinOblique.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/ResistSans/stylesheet.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Rubik/Rubik-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Rubik/Rubik.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/Rubik/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/PopUp/PopUp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/PopUp/PopUp.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/TasksStatesTable/TasksStatesTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/TasksStatesTable/TasksStatesTable.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/inputs/Button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/inputs/Input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/inputs/Input.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/colors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/noise.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/dates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/localStorageUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/passwords.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sleep.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sorters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,37 +206,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.25&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/KirSu/Desktop/PopUp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\KirSu\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "16.9.1",
+    "javascript.nodejs.core.library.typings.version": "16.9.1",
+    "last_opened_file_path": "D:/Учёба/2 курс/прочее/трпо/smartfit/src/components",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\KirSu\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\231.8109.174\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Учёба\2 курс\прочее\трпо\smartfit\src\components" />
       <recent name="D:\Work\go-herder-api-gui\src\components\Panel\Queue" />
       <recent name="D:\Work\go-herder-api-gui\src\components\Panel\Active" />
       <recent name="D:\Work\go-herder-api-gui\src\components\Panel\Finished" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Учёба\2 курс\прочее\трпо\smartfit\public" />
       <recent name="D:\Work\go-herder-api-gui\src\components\Panel" />
       <recent name="D:\Work\go-herder-api-gui\src\fonts\OpenSans" />
       <recent name="D:\Work\go-herder-api-gui\src\fonts" />
       <recent name="D:\Work\go-herder-api-gui\public\fonts" />
-      <recent name="D:\Work\go-herder-api-gui\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,6 +268,7 @@
       <workItem from="1683112697103" duration="21939000" />
       <workItem from="1683220689114" duration="7164000" />
       <workItem from="1683647845358" duration="5477000" />
+      <workItem from="1683838091425" duration="16478000" />
     </task>
     <servers />
   </component>
