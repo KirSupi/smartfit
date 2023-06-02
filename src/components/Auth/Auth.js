@@ -16,14 +16,13 @@ const Auth = ({setCookies}) => {
                 <label htmlFor={styles.InputPassword}>Пароль</label>
                 <input type="text" id={styles.InputPassword} onChange={e=>setPassword(e.target.value)}/>
                 <input type="button" value='Войти' id={styles.AuthButton} className={appStyles.white} onClick={e=>{
-                    setCookies('session', 'res', {path: '/'});
-                    fetch('/api/auth', {
+                    fetch('/api/auth/sign-in', {
                         method:'POST',
                         body:JSON.stringify({
-                            login:login,
+                            username:login,
                             password:password
                         })
-                    }).then(res=>res.text()).then(res=>setCookies('session', res, {path: '/'}));
+                    }).then(res=>res.text()).then(res=>setCookies('session', res?.session?.session || "invalid", {path: '/'}));
                 }}/>
             </div>
             <a href="" id={styles.RegistrationLink} onClick={e=>{

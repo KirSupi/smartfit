@@ -1,106 +1,191 @@
 import styles from "./Calendar.module.scss";
-import React from "react";
-
-const Calendar = () => {
-    const workouts = [
+import React, {useEffect, useState} from "react";
+const mockRes = {
+    "data": [
         {
-            id: 1,
-            date: "2023-05-04",
-            title: "Грудь и руки",
-            exercises: [
+            "id": 1,
+            "Date": "2023-05-29T09:23:10.34Z",
+            "Title": "Chest and Tricep Workout",
+            "Exercises": [
                 {
-                    title: "Жим лёжа",
-                    reps: [5, 5, 5, 5, 5]
+                    "id": 1,
+                    "title": "Bench Press",
+                    "sets": 3,
+                    "reps": [
+                        10,
+                        8,
+                        6
+                    ],
+                    "weights": [
+                        135,
+                        155,
+                        175
+                    ],
+                    "calories": 150
                 },
                 {
-                    title: "Подъём штанги в скамье Скотта",
-                    reps: [5, 8, 8]
+                    "id": 2,
+                    "title": "Incline Dumbbell Press",
+                    "sets": 3,
+                    "reps": [
+                        12,
+                        10,
+                        8
+                    ],
+                    "weights": [
+                        50,
+                        55,
+                        60
+                    ],
+                    "calories": 120
                 },
                 {
-                    title: "Бег",
-                    dur: 180, // dur -> duration in seconds
-                },
-            ]
+                    "id": 3,
+                    "title": "Cable Crossover",
+                    "sets": 3,
+                    "reps": [
+                        15,
+                        12,
+                        10
+                    ],
+                    "weights": [
+                        20,
+                        25,
+                        30
+                    ],
+                    "calories": 90
+                }
+            ],
+            "WorkoutExercises": null
         },
         {
-            id: 2,
-            date: "2023-05-07",
-            title: "Спина",
-            exercises: [
+            "id": 4,
+            "Date": "2023-05-28T17:30:00Z",
+            "Title": "Back and Bicep Workout",
+            "Exercises": [
                 {
-                    title: "Подтягивания",
-                    reps: [7, 7, 7]
+                    "id": 8,
+                    "title": "Deadlift",
+                    "sets": 4,
+                    "reps": [
+                        8,
+                        6,
+                        4,
+                        2
+                    ],
+                    "weights": [
+                        110,
+                        120,
+                        120,
+                        120
+                    ],
+                    "calories": 200
                 },
                 {
-                    title: "Бабочка",
-                    reps: [12, 8, 12]
+                    "id": 9,
+                    "title": "Pull-Up",
+                    "sets": 3,
+                    "reps": [
+                        12,
+                        10,
+                        8
+                    ],
+                    "weights": null,
+                    "calories": 60
                 },
                 {
-                    title: "Бег",
-                    dur: 120, // dur -> duration in seconds
-                },
-            ]
+                    "id": 10,
+                    "title": "Barbell Curl",
+                    "sets": 3,
+                    "reps": [
+                        10,
+                        8,
+                        6
+                    ],
+                    "weights": [
+                        65,
+                        75,
+                        85
+                    ],
+                    "calories": 70
+                }
+            ],
+            "WorkoutExercises": null
         },
         {
-            id: 3,
-            date: "2023-05-10",
-            title: "Грудь и руки",
-            exercises: [
+            "id": 5,
+            "Date": "2023-05-27T10:00:00Z",
+            "Title": "Leg Workout",
+            "Exercises": [
                 {
-                    title: "Жим лёжа",
-                    reps: [5, 5, 5, 5, 5]
+                    "id": 11,
+                    "title": "Squat",
+                    "sets": 5,
+                    "reps": [
+                        12,
+                        10,
+                        8,
+                        6,
+                        4
+                    ],
+                    "weights": [
+                        90,
+                        100,
+                        110,
+                        120,
+                        120
+                    ],
+                    "calories": 250
                 },
                 {
-                    title: "Подъём штанги в скамье Скотта",
-                    reps: [5, 8, 8]
+                    "id": 12,
+                    "title": "Leg Press",
+                    "sets": 4,
+                    "reps": [
+                        15,
+                        12,
+                        10,
+                        8
+                    ],
+                    "weights": [
+                        180,
+                        200,
+                        210,
+                        210
+                    ],
+                    "calories": 150
                 },
                 {
-                    title: "Бег",
-                    dur: 180, // dur -> duration in seconds
-                },
-            ]
-        },
-        {
-            id: 4,
-            date: "2023-05-12",
-            title: "Грудь и руки",
-            exercises: [
-                {
-                    title: "Жим лёжа",
-                    reps: [12, 12, 12]
-                },
-                {
-                    title: "Подъём штанги в скамье Скотта",
-                    reps: [12, 12, 12]
-                },
-                {
-                    title: "Бег",
-                    dur: 330, // dur -> duration in seconds
-                },
-            ]
-        },
-        {
-            id: 5,
-            date: "2023-05-14",
-            title: "Грудь и руки",
-            exercises: [
-                {
-                    title: "Жим лёжа",
-                    reps: [20, 10]
-                },
-                {
-                    title: "Подъём штанги в скамье Скотта",
-                    reps: [15, 15, 12]
-                },
-                {
-                    title: "Бег",
-                    dur: 300, // dur -> duration in seconds
-                },
-            ]
+                    "id": 13,
+                    "title": "Lunges",
+                    "sets": 3,
+                    "reps": [
+                        12,
+                        10,
+                        8
+                    ],
+                    "weights": [
+                        30,
+                        35,
+                        40
+                    ],
+                    "calories": 100
+                }
+            ],
+            "WorkoutExercises": null
         }
-    ];
+    ]
+};
+const Calendar = () => {
+    const [workouts, setWorkouts] = useState([]);
+    useEffect(()=>{
+        fetch('/api/workouts/').then(res=>res.json()).then(res=>{
+            setWorkouts(res.data);
+        })
+        // setWorkouts(mockRes.data);
+    },[]);
     const formatDate = dateRaw => {
-        let [year, month, day] = dateRaw.split('-', 3);
+        let [year, month, day] = dateRaw.slice(0, 10).split('-', 3);
         const date = [day, month, year].join('.')
         let dayOfWeek = '';
         switch ((new Date(dateRaw)).getDay()) {
@@ -145,20 +230,20 @@ const Calendar = () => {
         return [year, month, day].join('-')
     }
     const today = getToday();
-    const sortFunc = (a, b) => (a.date > b.date ? -1 : a.date === b.date ? 0 : 1);
+    const sortFunc = (a, b) => (a.Date > b.Date ? -1 : a.Date === b.Date ? 0 : 1);
     return <div id={styles.Calendar}>
         <h1>Тренировки</h1>
         <div id={styles.Workouts}>
             {
                 workouts.sort(sortFunc).map(workout => <div className={styles.Workout} key={workout.id}>
                     <div
-                        className={styles.Title + ' ' + (workout.date < today ? styles.Past : workout.date === today ? styles.Today : styles.Future)}>
-                        {workout.title} {formatDate(workout.date)}
+                        className={styles.Title + ' ' + (workout.Date < today ? styles.Past : workout.Date === today ? styles.Today : styles.Future)}>
+                        {workout.Title} {formatDate(workout.Date)}
                     </div>
                     <div className={styles.Exercises}>
                         <table>
                             <tbody>
-                            {workout.exercises.map((exercise, exerciseIndex) => <tr key={exerciseIndex}>
+                            {workout.Exercises.map((exercise, exerciseIndex) => <tr key={exerciseIndex}>
                                 <td>{exercise.title} {}</td>
                                 <td>{!!exercise.reps ? exercise.reps.join(' ') : formatDuration(exercise.dur)}</td>
                             </tr>)}
